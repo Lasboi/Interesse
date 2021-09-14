@@ -4,6 +4,13 @@
 
 body {
 	margin: 0;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+	display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,6 +53,7 @@ img {
 	transform: translateX(-50%);
 	display: block;
 	transition: top 0.3s;
+	z-index: 1;
 }
 
 
@@ -70,4 +78,34 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.firstSection{
+	height: 100vh;
+	background-image: url("../images/background-main.jpg");
+}
+
+.heading{
+	font-size: 52px;
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+}
+
+
+/* Arrow Animation */
+@keyframes jump {
+	0% { transform: translate(-50%, -50%) scale(1, 1); }
+	50% { transform: translate(-50%, -150%) scale(1, 1); }
+	100% { transform: translate(-50%, -50%) scale(1, 1); }
+}
+
+#arrow{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: jump 1.2s infinite;
 }
