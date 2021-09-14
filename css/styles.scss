@@ -616,7 +616,7 @@ a.jx-knightlab:focus span.juxtapose-name{
 
 #youtubeVideo{
 	width: 100%;
-	height: 100%;
+	height: 500px;
 }
 
 #community{
@@ -642,6 +642,15 @@ a.jx-knightlab:focus span.juxtapose-name{
 	scroll-margin-top: 150px;
 }
 
+footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #333333;
+	text-align: center;
+	font-size: 1em;
+	width: 100%;
+}
+
 @media only screen and (max-width: 768px){
 	.firstSection{
 		display: block;
@@ -659,7 +668,8 @@ a.jx-knightlab:focus span.juxtapose-name{
 		width: 100%;
 	}
 
-	#navbar{
-		top: 0px;
+	.close{
+		top: 100px;
+		right: 10px;
 	}
 }
