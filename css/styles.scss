@@ -613,3 +613,27 @@ a.jx-knightlab:focus span.juxtapose-name{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+#youtubeVideo{
+	width: 100%;
+	height: 100%;
+}
+
+#community{
+	scroll-margin-top: 150px;
+}
+
+.parallax-four {
+	background-image: url("../images/osrs_boss.jpg");
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#imageText{
+	font-size: 1.3em;
+	text-align: center;
+	padding-top: 10px;
+}

@@ -37,7 +37,7 @@
 					<a class="nav-link" href="#runelite"><p>white:Runelite</p></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><p>white:Placeholder</p></a>
+					<a class="nav-link" href="#community"><p>white:The Community</p></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#"><p>white:Placeholder</p></a>
@@ -58,7 +58,8 @@
 	<div class="firstSection">
 		<div class="firstInnerSection">
 		<p class="heading">yellow:What the heck is OSRS?</p>
-		<p class="content">white:Old School RuneScape is a massively multiplayer online role-playing game (MMORPG) developed and published by Jagex. The game was released on 22 February 2013. When Old School RuneScape launched, it was originally an August 2007 version of RuneScape, which was highly popular prior to the launch of RuneScape 3. The game has since received engine improvements, new content, and quality of life updates largely decided by in-game polls. Despite having a smaller development team and a slower relative update schedule, Old School RuneScape has a larger player-base than RuneScape. A mobile version for Android and iOS was released in October 2018.</p>
+		<p class="content">white:Old School RuneScape is a massively multiplayer online role-playing game (MMORPG) developed and published by Jagex. The game was released on 22 February 2013. When Old School RuneScape launched, it was originally an August 2007 version of RuneScape, which was highly popular prior to the launch of RuneScape 3.<br> <br>
+			The game has since received engine improvements, new content, and quality of life updates largely decided by in-game polls. Despite having a smaller development team and a slower relative update schedule, Old School RuneScape has a larger player-base than RuneScape. A mobile version for Android and iOS was released in October 2018.</p>
 		</div>
 		<div class="firstInnerSection">
 			<img id="sectionImageOne" src="images/Lumbridge.PNG" alt="OSRS Lumbridge">
@@ -76,7 +77,7 @@
 <div class="parallax-two">
 </div>
 
-<!-- Første Content Sektion -->
+<!-- Anden Content Sektion -->
 <div class="firstSectionWrapper" id="runelite">
 	<div class="firstSection">
 		<div class="firstInnerSection">
@@ -97,6 +98,43 @@
 <div class="parallax-three">
 </div>
 
+<!-- Tredje Content Sektion -->
+<div class="firstSectionWrapper" id="community">
+	<div class="firstSection">
+		<div class="firstInnerSection">
+			<p class="heading">yellow:The Lovely Community</p>
+			<p class="content">white:There are a lot of different opinions about the RuneScape community. But there is one thing that is certain about the players who use countless hours grinding the same thing over and over again. They are really passionate about their game, and they are willing to invest their knowledge in creating awesome experiences for other players.
+				<br><br></br>Let's take Settled the most popular OSRS YouTube Creator as an example, he spends hundreds of hours doing the same activity over and over again so that he can create an YouTube video for the community where he achieves something that most players can’t or won’t do.
+			</p>
+		</div>
+		<div class="firstInnerSection">
+			<iframe id="youtubeVideo" src="https://www.youtube.com/embed/rk5XuqLrf3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p class="pictureContent">glow3:wave:Settled - Swampletics</p>
+		</div>
+	</div>
+</div>
+
+<div class="parallax-four">
+</div>
+
+<!-- Fjerde Content Sektion -->
+<div class="firstSectionWrapper" id="updates">
+	<div class="firstSection">
+		<div class="firstInnerSection">
+			<img src="images/osrs_tempoross.jpg" alt="OSRS new skilling boss - Tempoross">
+			<p id="imageText">white: </p>
+			<p class="pictureContent">glow2:wave2:Updates every week!</p>
+		</div>
+		<div class="firstInnerSection">
+			<p class="heading">yellow:The most updated MMORPG</p>
+			<p class="content">white:RuneScape and Old School Runescape is the most updated free MMORPG to this date. Ever since the game launched back in 2001 there have been hundreds upon hundreds of updates to both games. Each game gets one update every single week however the updates range from small fixes to brand new content.
+
+				<br><br>The game is in an ever changing state where the developers of the game tries to keep the interest of the players by making brand new content and fixing the bugs that annoys the playerbase. As for OSRS all new updates have to pass a poll where the community votes if they want the update or not. If the poll does not get a 75% upvote the new content is declined. This ensures that it’s only the updates that the players want that are being developed and put into the game.
+			</p>
+		</div>
+	</div>
+</div>
+
 <!-- Script til scroll effekter -->
 <script src="js/scroll.js"></script>
 
@@ -109,6 +147,23 @@
 <script src="js/modal.js"></script>
 
 <script src="js/compare.js"></script>
+
+<script>
+	var img = document.getElementsByTagName("img");
+	var text = document.getElementById("imageText");
+
+	for (var i = 0; i < img.length; i++) {
+		img[i].addEventListener("mouseover", function() {
+			var alt = this.alt;
+			text.textContent = alt;
+		})
+		img[i].addEventListener("mouseleave", function() {
+			var alt = this.alt;
+			text.textContent = "";
+		});
+	}
+
+</script>
 
 
 
