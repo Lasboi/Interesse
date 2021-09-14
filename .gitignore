@@ -1,2 +1,4 @@
-../../../../wamp64/www/Interesse/.idea
+.idea
 node_modules
+css/*.css
+css/*.css.map
