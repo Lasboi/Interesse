@@ -81,6 +81,7 @@ img {
 .nav-link:hover {
 	box-shadow: 0 0 0 rgba(255,255,255, 0.9);
 	animation: pulse 1s infinite;
+	background-color: #505050;
 }
 
 .navbar-nav{
@@ -101,18 +102,43 @@ img {
 	background-size: cover;
 }
 
-.firstSection{
-	height: 100vh;
+.firstSectionWrapper{
+	height: 1000px;
 	background-image: url("../images/background-main.jpg");
+	opacity: 95%;
+}
+
+.firstSection{
+	display: flex;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.firstInnerSection{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .heading{
-	font-size: 52px;
+	font-size: 2.5em;
 	width: 80%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: left;
 	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.content{
+	font-size: 1.5em;
+	width: 80%;
+	text-align: left;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+#facts{
+	scroll-margin-top: 150px;
 }
 
 
