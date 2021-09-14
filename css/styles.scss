@@ -31,3 +31,32 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+#navbar{
+	position: fixed;
+	top: -150px;
+	width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	transition: top 0.3s;
+}
+
+.nav-link:hover{
+	color: #ffffff !important;
+	background-color: #3A2F19;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url("/images/osrs_bg.jpg");
+
+	/* Set a specific height */
+	min-height: 100vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
