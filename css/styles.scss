@@ -61,19 +61,40 @@ img {
 	font-size: 2em;
 	font-family: rsFont;
 }
-.nav-link:hover{
-	color: #ffffff !important;
-	background-color: #3A2F19;
+
+/* Animation til at få navigations knapper til at "pulse" */
+@keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+		box-shadow: 0 0 0 0 rgba(255,255,255, 0.9);
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+		box-shadow: 0 0 0 10px rgba(255,255,25544, 0);
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+		box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+	}
+}
+
+.nav-link:hover {
+	box-shadow: 0 0 0 rgba(255,255,255, 0.9);
+	animation: pulse 1s infinite;
+}
+
+.navbar-nav{
+	padding-right: 50px;
+}
+
+.nav-item{
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .parallax-hero {
-	/* The image used */
 	background-image: url("../images/osrs_bg.jpg");
-
-	/* Set a specific height */
 	min-height: 100vh;
-
-	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;

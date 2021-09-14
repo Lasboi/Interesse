@@ -15,7 +15,7 @@ $custom-colors: (
 
 $custom-colors: (
         "primary": #007bff,
-        "navbarBg": rgba(160, 160, 160, 0.33)
+        "navbarBg": rgba(46, 49, 49, 0.8)
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
