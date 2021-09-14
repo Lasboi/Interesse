@@ -641,3 +641,25 @@ a.jx-knightlab:focus span.juxtapose-name{
 #updates{
 	scroll-margin-top: 150px;
 }
+
+@media only screen and (max-width: 768px){
+	.firstSection{
+		display: block;
+	}
+
+	.firstInnerSection{
+		width: 100%;
+	}
+
+	.content{
+		width: 100%;
+	}
+
+	.heading{
+		width: 100%;
+	}
+
+	#navbar{
+		top: 0px;
+	}
+}
