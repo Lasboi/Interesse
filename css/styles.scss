@@ -32,6 +32,12 @@ img {
 	height: auto;
 }
 
+/* Fonts */
+@font-face {
+	font-family: rsFont;
+	src: url(fonts/runescape/runescape_uf.ttf);
+}
+
 #navbar{
 	position: fixed;
 	top: -150px;
@@ -42,6 +48,11 @@ img {
 	transition: top 0.3s;
 }
 
+
+.nav-link{
+	font-size: 2em;
+	font-family: rsFont;
+}
 .nav-link:hover{
 	color: #ffffff !important;
 	background-color: #3A2F19;
@@ -49,7 +60,7 @@ img {
 
 .parallax {
 	/* The image used */
-	background-image: url("/images/osrs_bg.jpg");
+	background-image: url("../images/osrs_bg.jpg");
 
 	/* Set a specific height */
 	min-height: 100vh;
