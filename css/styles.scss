@@ -39,12 +39,6 @@ img {
 	height: auto;
 }
 
-/* Fonts */
-@font-face {
-	font-family: rsFont;
-	src: url(fonts/runescape/runescape_uf.ttf);
-}
-
 #navbar{
 	position: fixed;
 	top: -150px;
@@ -58,8 +52,7 @@ img {
 
 
 .nav-link{
-	font-size: 2em;
-	font-family: rsFont;
+	font-size: 1.7em;
 }
 
 /* Animation til at få navigations knapper til at "pulse" */
@@ -91,6 +84,11 @@ img {
 .nav-item{
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+#logo{
+	height: 80px;
+	width: 200px;
 }
 
 .parallax-hero {
