@@ -1,3 +1,5 @@
+/* Script som gør det muligt at sammenligne to billeder med en slider */
+
 (function (document, window) {
 
     var juxtapose = {

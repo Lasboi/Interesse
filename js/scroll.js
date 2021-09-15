@@ -1,3 +1,6 @@
+/* Script der får navigations baren til at vise sig når man har scrollet X antal pixels
+* samt skjule den pil som hopper på forsiden efter X antal pixels */
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

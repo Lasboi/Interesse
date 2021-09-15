@@ -1,3 +1,6 @@
+/* Script som gør det er muligt i koden at skrive forskellige kommandoer
+* som viser teksten med en bestemt effekt - kendt fra spillet RuneScape */
+
 (function(global) { "use strict";
 
     /**
