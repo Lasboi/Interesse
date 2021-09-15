@@ -39,6 +39,14 @@ img {
 	height: auto;
 }
 
+#navbarMobile{
+	display: none;
+}
+
+#navbar{
+	display: inline;
+}
+
 #navbar{
 	position: fixed;
 	top: -150px;
@@ -669,5 +677,26 @@ footer{
 	.close{
 		top: 100px;
 		right: 10px;
+	}
+
+	#logoMobile{
+		width: 64px;
+		height: 64px;
+	}
+
+	#navbarMobile{
+		display: inline;
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.navbar-toggler{
+		color: #ffffff !important;
+		border-color: #ffffff !important;
+	}
+
+	#navbar{
+		display: none;
 	}
 }
