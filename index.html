@@ -189,22 +189,8 @@
 <!-- Script til Image Compare Slider -->
 <script src="js/compare.js"></script>
 
-<script>
-	var img = document.getElementsByTagName("img");
-	var text = document.getElementById("imageText");
-
-	for (var i = 0; i < img.length; i++) {
-		img[i].addEventListener("mouseover", function() {
-			var alt = this.alt;
-			text.textContent = alt;
-		})
-		img[i].addEventListener("mouseleave", function() {
-			var alt = this.alt;
-			text.textContent = "";
-		});
-	}
-
-</script>
+<!-- Script til Image Hover Effekter -->
+<script src="js/hover-effect.js"></script>
 
 
 
