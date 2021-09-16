@@ -739,6 +739,10 @@ footer{
 	margin-bottom: 10px;
 }
 
+#errorNav{
+	display: inline;
+}
+
 //Mobil og Tablet Layout
 @media only screen and (max-width: 768px){
 	.firstSection{
@@ -817,5 +821,9 @@ footer{
 
 	.errorImageText{
 		font-size: 12px;
+	}
+
+	#errorNav{
+		display: none;
 	}
 }
