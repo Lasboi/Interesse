@@ -1,0 +1,100 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+
+    <meta charset="utf-8">
+
+    <title>OSRS The #1 MMORPG</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Favicon i browseren -->
+    <link rel="icon" href="images/osrs-favicon.png" type="image/gif" sizes="16x16">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Henter stylesheet til den custom OSRS Font -->
+    <link rel="stylesheet" href="css/os-font.css" />
+
+</head>
+
+
+<body>
+
+<div class="contentWrap">
+    <div class="navWrap">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbarBg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://las-designs.dk/interesse/">
+                    <img id="logo" src="images/osrs_logo_wide.png" alt="OSRS Logo">
+                </a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://las-designs.dk/interesse/#facts"><p>white:About OSRS</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://las-designs.dk/interesse/#runelite"><p>white:RuneLite</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://las-designs.dk/interesse/#community"><p>white:The Community</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://las-designs.dk/interesse/#updates"><p>white:Updates</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="errorContent">
+        <img id="partyhatBlue"src="images/osrs-partyhat.png">
+        <img id="partyhatWhite"src="images/osrs_partyhat_white.png">
+        <p class="errorText">white:Connection lost<br>
+            Please wait - attempting to reestablish</p>
+        <img id="agsSpec" src="images/osrs_spec.gif">
+        <p class="errorImageText">glow1:wave:Get rekt n00b - thx 4 the free lootz</p>
+        <div class="text-center">
+            <a href="https://las-designs.dk/interesse/"><button type="button" class="btn-lg btn-gray text-center btn-outline-black" id="errorBtn"> <p>white:Back to homepage</p></button></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>flash1:Created by Las-Designs © 2021</p>
+    </footer>
+
+</div>
+
+
+
+
+<!-- Script til Runescape Font Effekter -->
+<script type="text/javascript" src="js/os-font.js"></script>
+<script type="text/javascript">
+    OsFont.compile();
+</script>
+
+<!-- Script til Bootstrap moduler -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

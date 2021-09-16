@@ -671,6 +671,74 @@ footer{
 	width: 100%;
 }
 
+//404 Styling
+.contentWrap{
+	height: auto;
+	background-image: url("../images/background-main.jpg");
+	opacity: 95%;
+}
+
+.navWrap{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.errorContent{
+	width: 80%;
+	height: auto;
+	margin-bottom: 40px;
+	margin-top: 20vh;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 50px 10px 50px;
+	border: 10px solid transparent;
+	border-image: url("../images/osrs_frame.PNG") 20% round;
+	background-color: #1c1f23;
+	}
+
+.errorText{
+	text-align: center;
+	font-size: 2.3em;
+	background-color: black;
+	border: 2px solid white;
+}
+
+.errorContent #partyhatBlue{
+	position: absolute;
+	left: 6%;
+	top: 21%;
+	width: 150px;
+	height: 150px;
+	transform: rotate(-20deg);
+}
+
+.errorContent #partyhatWhite{
+	position: absolute;
+	right: 6%;
+	top: 21%;
+	width: 150px;
+	height: 150px;
+	transform: rotate(20deg);
+}
+
+#agsSpec{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+.errorImageText{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+#errorBtn{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 //Mobil og Tablet Layout
 @media only screen and (max-width: 768px){
 	.firstSection{
@@ -727,5 +795,27 @@ footer{
 
 	.modal-content{
 		height: 40%;
+	}
+
+	#partyhatWhite{
+		visibility: hidden;
+	}
+
+	#partyhatBlue{
+		visibility: hidden;
+	}
+
+	.errorText{
+		font-size: 12px;
+	}
+
+	.errorContent{
+		margin-top: 5vh;
+		height: auto;
+		padding-bottom: 40px;
+	}
+
+	.errorImageText{
+		font-size: 12px;
 	}
 }
