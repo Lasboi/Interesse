@@ -27,6 +27,9 @@
     <!-- Henter stylesheet til den custom OSRS Font -->
     <link rel="stylesheet" href="css/os-font.css" />
 
+    <!-- Sender brugeren tilbage til start siden efter 30 sekunder -->
+    <meta http-equiv="refresh" content="23;url=https://las-designs.dk/interesse/" />
+
 </head>
 
 
@@ -97,7 +100,9 @@
         <p class="errorText">white:Connection lost<br>
             Please wait - attempting to reestablish</p>
         <img id="agsSpec" src="images/osrs_spec.gif">
-        <p class="errorImageText">glow1:wave:Get rekt n00b - thx 4 the free lootz</p>
+        <p id="errorImageText">glow1:wave:Get rekt n00b - thx 4 the free lootz</p>
+        <img id="homeTeleport" src="images/Home_Teleport.gif">
+        <p id="errorTimer">white:You will be teleported home in <span id="countdowntimer">14 </span> Seconds</p>
         <div class="text-center">
             <a href="https://las-designs.dk/interesse/"><button type="button" class="btn-lg btn-gray text-center btn-outline-black" id="errorBtn"> <p>white:Back to homepage</p></button></a>
         </div>
@@ -118,6 +123,37 @@
 <script type="text/javascript">
     OsFont.compile();
 </script>
+
+<!-- Script der laver en countdown timer på 23 sekunder og opdatere tallet der vises på skærmen -->
+<script type="text/javascript">
+    var timeleft = 23;
+    var backTimer = setInterval(function(){
+        timeleft--;
+        document.getElementById("countdowntimer").textContent = timeleft;
+        if(timeleft <= 0)
+            clearInterval(backTimer);
+    },1000);
+</script>
+
+<!-- Script der tilføjer en klasse til et element efter 10 sekunder -->
+<script>
+    function hideStuff() {
+        setTimeout(function(){
+            document.getElementById('errorImageText').classList.add('hidden');
+        },10000)
+    }
+    hideStuff();
+</script>
+
+<!-- Script der tilføjer en klasse til et element efter 10 sekunder -->
+<script>
+    function showStuff() {
+        document.getElementById("errorTimer").style.display = "block";
+        document.getElementById("homeTeleport").style.display = "block";
+    }
+    setTimeout("showStuff()", 10000); // 10 sekunder
+</script>
+
 
 <!-- Script til Bootstrap moduler -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

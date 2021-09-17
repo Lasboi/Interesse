@@ -726,9 +726,35 @@ footer{
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 20px;
+	//Alternativ måde at skjule et element på uden javascript
+	-moz-animation: cssAnimationHide 0s ease-in 10s forwards;
+	/* Firefox */
+	-webkit-animation: cssAnimationHide 0s ease-in 10s forwards;
+	/* Safari & Chrome */
+	-o-animation: cssAnimationHide 0s ease-in 10s forwards;
+	/* Opera */
+	animation: cssAnimationHide 0s ease-in 10s forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 }
 
-.errorImageText{
+//Alternativ måde at skjule et element på uden javascript
+@keyframes cssAnimationHide {
+	to {
+		width:0;
+		height:0;
+		display: none;
+	}
+}
+@-webkit-keyframes cssAnimationHide {
+	to {
+		width: 0;
+		height: 0;
+		display: none;
+	}
+}
+
+#errorImageText{
 	margin-top: 20px;
 	text-align: center;
 	font-size: 1.6em;
@@ -740,7 +766,33 @@ footer{
 }
 
 #errorNav{
-	display: inline;
+	display: block;
+}
+
+#errornavMobile{
+	display: none;
+}
+
+#errorTimer{
+	font-size: 1.6em;
+	text-align: center;
+	display: none;
+	margin-top: 20px;
+}
+
+#homeTeleport{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	display: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.show{
+	display: block;
 }
 
 //Mobil og Tablet Layout
@@ -819,11 +871,15 @@ footer{
 		padding-bottom: 40px;
 	}
 
-	.errorImageText{
+	#errorImageText{
 		font-size: 12px;
 	}
 
 	#errorNav{
 		display: none;
+	}
+
+	#errornavMobile{
+		display: block;
 	}
 }
